@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.tukka</groupId>
+    <artifactId>r-client</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jri.version>0.5.5</jri.version>
+        <slf4j.version>1.7.7</slf4j.version>
+        <log4j.version>2.0.2</log4j.version>
+    </properties>
+
+    <dependencies>
+        <!--Logging Dependencies-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <!--JRI Dependencies-->
+        <dependency>
+            <groupId>org.rosuda</groupId>
+            <artifactId>JRI</artifactId>
+            <version>${jri.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.rosuda</groupId>
+            <artifactId>JRIEngine</artifactId>
+            <version>${jri.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.rosuda</groupId>
+            <artifactId>REngine</artifactId>
+            <version>${jri.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.rosuda</groupId>
+            <artifactId>RserveEngine</artifactId>
+            <version>${jri.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <inherited>true</inherited>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
