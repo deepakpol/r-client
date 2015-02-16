@@ -17,10 +17,10 @@ TODO:
 - Tests
 
 Dependencies:
-    RServe - http://rforge.net/Rserve/doc.html
-    Apache commons pool
-    slf4j for logging - can be removed if not needed
-    Java 1.8, can be used with 1.7, just trying to be cool ;)
+-  RServe - http://rforge.net/Rserve/doc.html
+-  Apache commons pool
+-  slf4j for logging - can be removed if not needed
+-  Java 1.8, can be used with 1.7, just trying to be cool ;)
 
 Usage:
     1. Extend your client from BaseRClient
