@@ -20,11 +20,12 @@ Dependencies:
 -  RServe - http://rforge.net/Rserve/doc.html
 -  Apache commons pool
 -  slf4j for logging - can be removed if not needed
--  Java 1.8, can be used with 1.7, just trying to be cool ;)
+-  Java 1.8 ( 1.7+ ?)
 
 Usage:
-    1. Extend your client from BaseRClient
-    2.
+-  Extend your client from BaseRClient
+-  Pass your implementation to handleExecution() call, an RConnection would be passed as parameter
+        
         public double someRFunction([Params ...]) {
 
            return handleExecution(rConnection ->{
@@ -36,8 +37,7 @@ Usage:
 
                return rConnection.parseAndEval("someRFunction(var1, var2, var3, var4)").asDouble();
            });
-
-       }
+        }
 
 License:
 
