@@ -24,7 +24,7 @@ Dependencies:
 
 Usage:
 -  Extend your client from BaseRClient
--  Pass your implementation to handleExecution() call, an RConnection would be passed as parameter
+-  Pass your implementation to handleExecution() call, RConnection would be passed as parameter
         
         public double someRFunction([Params ...]) {
 
